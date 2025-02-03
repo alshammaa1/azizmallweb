@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل البيانات - Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="form-header">
+        <h1 class="h"> يرجى ملء البيانات الشخصية<br>Please fill your details</h1>
+        <div class="form-group" >
+            <img src="src/assets/images/2.jpg " alt="img" class="image">
+        </div>
+    </header>
+
+
+    <main class="registration-form">
+      
+        <form id="registrationForm">
+          
+                <div class="form-group">
+
+                    <label>الاسم / Name<span class="required">*</span></label>
+                    <input type="text" id="name" placeholder="Complete Name" required>
+                </div>
+                <div class="form-group">
+                    <label>رقم الهاتف / Mobile<span class="required">*</span></label>
+                    <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="000 0000 000" required>
+                </div>
+
+                <!-- البريد -->
+                <div class="form-group">
+                    <label>البريد الإلكتروني / Email<span class="required">*</span></label>
+                    <input type="email" id="email" placeholder="name@gmail.com" required>
+                </div>
+
+                <!-- المدينة -->
+                <div class="form-group">
+                    <label>المدينة / Country<span class="required">*</span></label>
+                    <select id="city" required>
+                        <option value="">Select your city</option>
+                        <option value="riyadh">الرياض - Riyadh</option>
+                        <option value="jeddah">جدة - Jeddah</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">
+                        <span class="ar">إرسال</span>
+                        <span class="en">SUBMIT</span>
+                    </button>
+                </div>
+        </form>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
